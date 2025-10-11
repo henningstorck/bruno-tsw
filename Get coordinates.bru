@@ -1,0 +1,19 @@
+meta {
+  name: Get coordinates
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:31270/get/CurrentFormation/0.LatLon
+  body: none
+  auth: inherit
+}
+
+headers {
+  DTGCommKey: {{api_key}}
+}
+
+settings {
+  encodeUrl: true
+}

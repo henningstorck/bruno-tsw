@@ -1,0 +1,23 @@
+meta {
+  name: Set temperature
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:31270/set/WeatherManager.Temperature?value=20
+  body: none
+  auth: inherit
+}
+
+params:query {
+  value: 20
+}
+
+headers {
+  DTGCommKey: {{api_key}}
+}
+
+settings {
+  encodeUrl: true
+}

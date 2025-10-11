@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Train Sim World",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
